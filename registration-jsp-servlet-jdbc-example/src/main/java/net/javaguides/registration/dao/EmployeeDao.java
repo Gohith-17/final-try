@@ -19,7 +19,7 @@ public class EmployeeDao {
         Class.forName("com.mysql.jdbc.Driver");
 
         try (Connection connection = DriverManager
-            .getConnection("jdbc:mysql://localhost:3306/mysql_database?useSSL=false", "root", "3344@Root");
+            .getConnection("jdbc:mysql://172.31.32.223:3306/employees?useSSL=false", "root", "admin123");
 
             // Step 2:Create a statement using connection object
             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
